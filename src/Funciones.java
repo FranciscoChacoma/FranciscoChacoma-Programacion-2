@@ -29,9 +29,23 @@ public class Funciones {
     // Quinto Ejercicio
     public static void MenuRandom()
     {
-        System.out.println("AAAAA");
-        System.out.println("EEEEE");
-        System.out.println("UUUUU");
+        System.out.println("Hola");
+        System.out.println("Profe");
+        System.out.println("D:");
     }
 
+    // Sexto Ejercicio
+    public static boolean esPar(int numero)
+    {
+        if (numero % 2 == 0)
+        {
+            System.out.println("Es par");
+            return true;
+        }
+        else
+        {
+            System.out.println("Es Impar");
+            return false;
+        }
+    }
 }

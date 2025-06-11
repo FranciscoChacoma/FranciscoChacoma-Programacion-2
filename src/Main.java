@@ -45,6 +45,14 @@ public class Main {
 
             case 4:
                 Funciones.MenuRandom();
+
+            case 5:
+                System.out.println("Ingrese un numero");
+                int numero = scanner.nextInt();
+                Funciones.esPar(numero);
+                break;
+
+
             default:
                 System.out.println("Opcion no valdia");
                 break;
