@@ -17,11 +17,10 @@ public class Main {
         System.out.println("8 - Sumar multiples numeros");
         System.out.println("9 - Promedio array");
         System.out.println("10 - Busqueda en array");
-        System.out.println("11 - ");
+        System.out.println("11 - cantidad ocurrencia");
         System.out.println("12 - ");
         System.out.println("13 - ");
         System.out.println("14 - ");
-        System.out.println("15 - ");
 
 
         int Opciones = scanner.nextInt();
@@ -122,6 +121,18 @@ public class Main {
                 }
                 break;
 
+            case 11:  //en este ya me rendi con los ingresos asi q lo hago yo
+                String[] arrayStrings = {"hola", "mundo", "hola", "programacion", "java", "hola"};
+
+                System.out.print("Ingrese el texto a buscar: ");
+                scanner.nextLine();
+                String clave = scanner.nextLine();
+
+                int ocurrencias = Funciones.contarOcurrencias(arrayStrings, clave);
+                System.out.println("El texto aparece " + ocurrencias + " veces.");
+                break;
+
+            //mucho sueño
         }
     }
 }

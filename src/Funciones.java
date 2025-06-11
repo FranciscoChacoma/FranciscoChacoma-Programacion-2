@@ -89,5 +89,17 @@ public class Funciones {
         }
         return false;
     }
+    // Doceavo Ejercicio
+    public static int contarOcurrencias(String[] array, String clave) {
+        int contador = 0;
+
+        for (String elemento : array) {
+            if (elemento.equals(clave)) {        //equals es el == de los strings
+                contador++;
+            }
+        }
+
+        return contador;
+    }
 
 }
