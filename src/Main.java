@@ -6,8 +6,9 @@ public class Main {
         Funciones Funciones = new Funciones();
 
         System.out.println("Menu");
-        System.out.println("1 - Saludo");
-        System.out.println("2 - Saludo y nombre");
+        System.out.println("0 - Saludo");
+        System.out.println("1 - Saludo y nombre");
+        System.out.println("2 - Calcular Area");
         int Opciones = scanner.nextInt();
 
         switch (Opciones)
@@ -20,6 +21,21 @@ public class Main {
                 String nombre = "eteban";
                 Funciones.saludar(nombre);
                 break;
+
+            case 2:
+                System.out.println("Ingrese Base");
+                double base = scanner.nextInt();
+                System.out.println("Ingrese Altura");
+                double altura = scanner.nextInt();
+                Funciones.AR(base, altura);
+                break;
+
+            case 3:
+
+
+
+
+
             default:
                 System.out.println("Opcion no valdia");
                 break;

@@ -12,6 +12,13 @@ public class Funciones {
         System.out.println("Hola" + nombre);
     }
 
-    // Tercer Ejercicioo
-
+    // Tercer Ejercicio
+    public static double AR(double base, double altura)
+    {
+        double area = base * altura;
+        System.out.println("El área es: " + area);
+        return area;
+    }
 }
+
+    // Cuarto Ejercicio
