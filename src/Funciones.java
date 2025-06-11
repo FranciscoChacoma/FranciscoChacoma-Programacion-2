@@ -79,4 +79,15 @@ public class Funciones {
         double promedio = suma / numeros.length;
         return promedio;
     }
+
+    // Onceavo Ejercicio
+    public static boolean buscarValor(int[] array, int numeroBuscado) {
+        for (int num : array) {
+            if (num == numeroBuscado) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

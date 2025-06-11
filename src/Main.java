@@ -14,7 +14,14 @@ public class Main {
         System.out.println("5 - Par o Impar");
         System.out.println("6 - Cuadrado de un Numero");
         System.out.println("7 - Factorial (No anda, no gracias)");
-        System.out.println("8 - ");
+        System.out.println("8 - Sumar multiples numeros");
+        System.out.println("9 - Promedio array");
+        System.out.println("10 - Busqueda en array");
+        System.out.println("11 - ");
+        System.out.println("12 - ");
+        System.out.println("13 - ");
+        System.out.println("14 - ");
+        System.out.println("15 - ");
 
 
         int Opciones = scanner.nextInt();
@@ -94,6 +101,27 @@ public class Main {
                 double resultadoPromedio = Funciones.promedioArray(numerosPromedio);
                 System.out.println("El promedio es: " + resultadoPromedio);
                 break;
+            case 10:
+                System.out.println("¿Cuántos números quiere cargar en el array?");
+                int cantidadBuscar = scanner.nextInt();
+
+                int[] arrayBuscar = new int[cantidadBuscar];
+
+                for (int i = 0; i < cantidadBuscar; i++) {
+                    System.out.println("Ingrese el número " + (i + 1) + ":");
+                    arrayBuscar[i] = scanner.nextInt();
+                }
+                System.out.println("Ingrese el número a buscar:");
+                int numeroBuscado = scanner.nextInt();
+
+                boolean encontrado = Funciones.buscarValor(arrayBuscar, numeroBuscado);
+                if (encontrado) {
+                    System.out.println("El numero esta");
+                } else {
+                    System.out.println("El numero no est{a");
+                }
+                break;
+
         }
     }
 }
