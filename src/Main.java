@@ -9,6 +9,10 @@ public class Main {
         System.out.println("0 - Saludo");
         System.out.println("1 - Saludo y nombre");
         System.out.println("2 - Calcular Area");
+        System.out.println("3 - Texto a Mayuscula");
+        System.out.println("4 - Menu Random");
+        System.out.println("5 - ");
+        System.out.println("6 - ");
         int Opciones = scanner.nextInt();
 
         switch (Opciones)
@@ -39,6 +43,8 @@ public class Main {
                 System.out.println(Resultado);
                 break;
 
+            case 4:
+                Funciones.MenuRandom();
             default:
                 System.out.println("Opcion no valdia");
                 break;

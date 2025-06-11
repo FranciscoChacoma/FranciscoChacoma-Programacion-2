@@ -25,4 +25,13 @@ public class Funciones {
     {
         return texto.toUpperCase();
     }
+
+    // Quinto Ejercicio
+    public static void MenuRandom()
+    {
+        System.out.println("AAAAA");
+        System.out.println("EEEEE");
+        System.out.println("UUUUU");
+    }
+
 }
