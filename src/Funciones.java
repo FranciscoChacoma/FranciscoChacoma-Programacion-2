@@ -68,5 +68,15 @@ public class Funciones {
     }
 
     // DEcimo Ejercicio
+    public static double promedioArray(double[] numeros)
+    {
+        double suma = 0;
 
+        for (double num : numeros) {
+            suma += num;
+        }
+
+        double promedio = suma / numeros.length;
+        return promedio;
+    }
 }

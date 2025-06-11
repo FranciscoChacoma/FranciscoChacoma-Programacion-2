@@ -80,6 +80,20 @@ public class Main {
             default:
                 System.out.println("Opcion no valdia");
                 break;
+            case 9:
+                System.out.println("Cant numeros");
+                int cantidadPromedio = scanner.nextInt();
+
+                double[] numerosPromedio = new double[cantidadPromedio];
+
+                for (int i = 0; i < cantidadPromedio; i++) {
+                    System.out.println("Ingrese el número " + (i + 1) + ":");
+                    numerosPromedio[i] = scanner.nextDouble();
+                }
+
+                double resultadoPromedio = Funciones.promedioArray(numerosPromedio);
+                System.out.println("El promedio es: " + resultadoPromedio);
+                break;
         }
     }
 }
