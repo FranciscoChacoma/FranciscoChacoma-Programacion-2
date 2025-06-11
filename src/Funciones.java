@@ -12,6 +12,6 @@ public class Funciones {
         System.out.println("Hola" + nombre);
     }
 
-    // Tercer Ejercicio
+    // Tercer Ejercicioo
 
 }
