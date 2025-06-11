@@ -7,7 +7,7 @@ public class Funciones {
     }
 
     // Segundo ejercicio
-    public void saludar(String nombre)
+    public static void saludar(String nombre)
     {
         System.out.println("Hola" + nombre);
     }
@@ -19,6 +19,10 @@ public class Funciones {
         System.out.println("El área es: " + area);
         return area;
     }
-}
 
     // Cuarto Ejercicio
+    public static String AMayusc(String texto)
+    {
+        return texto.toUpperCase();
+    }
+}

@@ -23,6 +23,7 @@ public class Main {
                 break;
 
             case 2:
+                scanner.nextLine(); // limpar scanner
                 System.out.println("Ingrese Base");
                 double base = scanner.nextInt();
                 System.out.println("Ingrese Altura");
@@ -31,10 +32,12 @@ public class Main {
                 break;
 
             case 3:
-
-
-
-
+                scanner.nextLine(); // para limpiar el scannerrrrr
+                System.out.println("Ingrese un texto");
+                String texto = scanner.nextLine();
+                String Resultado = Funciones.AMayusc(texto);
+                System.out.println(Resultado);
+                break;
 
             default:
                 System.out.println("Opcion no valdia");
