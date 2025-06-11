@@ -48,4 +48,11 @@ public class Funciones {
             return false;
         }
     }
+
+    // Septimo Ejercicio
+    public static int Cuadrado(int numero)
+    {
+        int resultado = numero * numero;
+        return resultado;
+    }
 }
