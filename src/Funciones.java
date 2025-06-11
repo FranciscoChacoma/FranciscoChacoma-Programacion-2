@@ -55,4 +55,18 @@ public class Funciones {
         int resultado = numero * numero;
         return resultado;
     }
+
+    // Octavo Ejercicio (no)
+
+    // Noveno Ejercicio
+    public static int sumarNumeros(int... numeros) { //el... es para no poner parametros
+        int suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+        return suma;
+    }
+
+    // DEcimo Ejercicio
+
 }

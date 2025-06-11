@@ -13,7 +13,10 @@ public class Main {
         System.out.println("4 - Menu Random");
         System.out.println("5 - Par o Impar");
         System.out.println("6 - Cuadrado de un Numero");
-        System.out.println("7 - ");
+        System.out.println("7 - Factorial (No anda, no gracias)");
+        System.out.println("8 - ");
+
+
         int Opciones = scanner.nextInt();
 
         switch (Opciones)
@@ -54,14 +57,26 @@ public class Main {
                 break;
 
             case 6:
-            {
                 scanner.nextLine();
                 System.out.println("Ingrese un numero:");
                 int numeroo = scanner.nextInt();
                 int resultado = Funciones.Cuadrado(numeroo);
                 System.out.println("El cuadrado es " + resultado);
                 break;
-            }
+
+            case 8:
+                System.out.println("¿Cantidad de numeros?");
+                int cantidad = scanner.nextInt();
+
+                int[] numeros = new int[cantidad];
+                for (int i = 0; i < cantidad; i++) {
+                    System.out.println("Ingrese el número " + (i + 1) + ":");
+                    numeros[i] = scanner.nextInt();
+                }
+
+                int suma = Funciones.sumarNumeros(numeros);
+                System.out.println("La suma es: " + suma);
+                break;
             default:
                 System.out.println("Opcion no valdia");
                 break;
