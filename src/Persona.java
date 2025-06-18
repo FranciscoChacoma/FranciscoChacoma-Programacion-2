@@ -16,7 +16,7 @@ public class Persona {
         if (edad < 0)
         {
             System.out.println("Error: La Edad no puede ser menor a 0");
-            this.edad = 777777; // quiero poner edad invalida o algo
+            this.edad = 77777; // quiero poner edad invalida o algo
         }
         else
         {
